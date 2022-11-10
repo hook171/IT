@@ -1,0 +1,12 @@
+C:\lab\WebProject\domain\domain\bin\Debug\net6.0\domain.deps.json
+C:\lab\WebProject\domain\domain\bin\Debug\net6.0\domain.dll
+C:\lab\WebProject\domain\domain\bin\Debug\net6.0\ref\domain.dll
+C:\lab\WebProject\domain\domain\bin\Debug\net6.0\domain.pdb
+C:\lab\WebProject\domain\domain\obj\Debug\net6.0\domain.csproj.AssemblyReference.cache
+C:\lab\WebProject\domain\domain\obj\Debug\net6.0\domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\lab\WebProject\domain\domain\obj\Debug\net6.0\domain.AssemblyInfoInputs.cache
+C:\lab\WebProject\domain\domain\obj\Debug\net6.0\domain.AssemblyInfo.cs
+C:\lab\WebProject\domain\domain\obj\Debug\net6.0\domain.csproj.CoreCompileInputs.cache
+C:\lab\WebProject\domain\domain\obj\Debug\net6.0\domain.dll
+C:\lab\WebProject\domain\domain\obj\Debug\net6.0\ref\domain.dll
+C:\lab\WebProject\domain\domain\obj\Debug\net6.0\domain.pdb

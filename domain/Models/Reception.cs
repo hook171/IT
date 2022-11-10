@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace domain
 {
-    internal class Reception
+    public class Reception
     {
         public DateTime StartTime { get; set; }
 

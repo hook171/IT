@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace domain
 {
-    internal class User
+    public class User
     {
         public int Id { get; set; }
 
@@ -16,18 +16,12 @@ namespace domain
 
         public Role Role { get; set; }
 
-        public string Username { get; set; }
-
-        public string Password { get; set;}
-
         public User(int id, string phone, string fio, Role role, string username, string password)
         {
             Id = id;
             Phone = phone;
             FIO = fio;
             Role = role;    
-            Username = username;    
-            Password = password;
             
         }
 

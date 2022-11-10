@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace domain
 {
-    public class Role
+    public enum Role
     {
-        public int ID { get; set; }
-
-        public Role() { }
+        Patient,
+        Administrator
     }
 }

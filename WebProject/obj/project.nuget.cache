@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lujJK71cjEswJtr89euK10Qu+t7l4BvrWHrY8/OpACp3Kg0lSJMOr6AB3vr1xzQI38EPkDhF12lhf98DuJY99w==",
+  "dgSpecHash": "UvIXPD1TbRNh7CtzXBpP1SMTMr+ttD17zyZ1NefNdxobz2otarOU+w+rKR1Nv6+wLbGBwLdDBRRYjUNcnRKG3Q==",
   "success": true,
-  "projectFilePath": "C:\\lab\\WebProject\\WebProject\\WebProject.csproj",
+  "projectFilePath": "C:\\lab\\Project\\WebProject\\WebProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ARTEM\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\ARTEM\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",

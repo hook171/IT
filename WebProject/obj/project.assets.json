@@ -3993,11 +3993,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\lab\\WebProject\\WebProject\\WebProject.csproj",
+      "projectUniqueName": "C:\\lab\\Project\\WebProject\\WebProject.csproj",
       "projectName": "WebProject",
-      "projectPath": "C:\\lab\\WebProject\\WebProject\\WebProject.csproj",
+      "projectPath": "C:\\lab\\Project\\WebProject\\WebProject.csproj",
       "packagesPath": "C:\\Users\\ARTEM\\.nuget\\packages\\",
-      "outputPath": "C:\\lab\\WebProject\\WebProject\\obj\\",
+      "outputPath": "C:\\lab\\Project\\WebProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

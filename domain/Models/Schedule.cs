@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace domain.Models
 {
-    internal class Schedule
+    public class Schedule
     {
         public int DoctorId { get; set; }
 

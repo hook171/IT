@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\lab\\WebProject\\domain\\domain.csproj": {}
+    "C:\\lab\\Project\\domain\\domain.csproj": {}
   },
   "projects": {
-    "C:\\lab\\WebProject\\domain\\domain.csproj": {
+    "C:\\lab\\Project\\domain\\domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\lab\\WebProject\\domain\\domain.csproj",
+        "projectUniqueName": "C:\\lab\\Project\\domain\\domain.csproj",
         "projectName": "domain",
-        "projectPath": "C:\\lab\\WebProject\\domain\\domain.csproj",
+        "projectPath": "C:\\lab\\Project\\domain\\domain.csproj",
         "packagesPath": "C:\\Users\\ARTEM\\.nuget\\packages\\",
-        "outputPath": "C:\\lab\\WebProject\\domain\\obj\\",
+        "outputPath": "C:\\lab\\Project\\domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

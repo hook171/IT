@@ -5,7 +5,32 @@
       "ProjectGuid": "90f337c1-591c-4f94-9a92-7077d8e5914c",
       "DisplayName": "domain",
       "ColorIndex": 0
+    },
+    "6c98428a-33f8-4d80-90c9-487ed7c45655": {
+      "ProjectGuid": "6c98428a-33f8-4d80-90c9-487ed7c45655",
+      "DisplayName": "UnitTests",
+      "ColorIndex": 1
+    },
+    "12b08013-1989-48be-9554-88b109aa25bd": {
+      "ProjectGuid": "12b08013-1989-48be-9554-88b109aa25bd",
+      "DisplayName": "WebProject",
+      "ColorIndex": 2
+    },
+    "b6d8fc24-da8b-40c0-9788-6bbefaff6e92": {
+      "ProjectGuid": "b6d8fc24-da8b-40c0-9788-6bbefaff6e92",
+      "DisplayName": "hggf",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "0a93e247-77f6-4f1c-bab8-7579123185d6": {
+      "ProjectGuid": "0a93e247-77f6-4f1c-bab8-7579123185d6",
+      "DisplayName": "UnitTests",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 5
 }

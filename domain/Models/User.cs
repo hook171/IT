@@ -16,13 +16,18 @@ namespace domain
 
         public Role Role { get; set; }
 
-        public User(int id, string phone, string fio, Role role, string username, string password)
+        public string Username;
+
+        public string Password;
+
+        public User(string username, string password, int id, string phone, string fio, Role role)
         {
+            Username = username;
+            Password = password;
             Id = id;
             Phone = phone;
             FIO = fio;
-            Role = role;    
-            
+            Role = role;
         }
 
     }

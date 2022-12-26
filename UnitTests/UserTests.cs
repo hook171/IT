@@ -17,7 +17,7 @@ public class UserTests
 
     public User GetUser(string username)
     {
-        return new User(username, "qwerty123", 1, "89998887766", "Сергей Сергеев", Role.Patient);
+        return new User(username, "qwerty123", 1, "89998887766", "Alex Alexandrov", Role.Patient);
     }
 
     [Fact]

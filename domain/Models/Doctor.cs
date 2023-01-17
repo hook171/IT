@@ -1,4 +1,6 @@
-﻿namespace domain.Models
+﻿using domain.Services
+
+namespace domain.Models
 {	
 	public class Doctor
 	{
@@ -13,5 +15,12 @@
 			Specialization = specialization;
 		}
 
+		public Result IsValid()
+		{
+			if (Id < 0)
+				return Result.Fail("Invalid id");
+
+			return Result.Ok();
+		}
 	}
 }

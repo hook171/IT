@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\lab\\Project\\WebProject\\WebProject.csproj": {}
+    "D:\\Project\\WebProject\\WebProject.csproj": {}
   },
   "projects": {
-    "C:\\lab\\Project\\WebProject\\WebProject.csproj": {
+    "D:\\Project\\WebProject\\WebProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\lab\\Project\\WebProject\\WebProject.csproj",
+        "projectUniqueName": "D:\\Project\\WebProject\\WebProject.csproj",
         "projectName": "WebProject",
-        "projectPath": "C:\\lab\\Project\\WebProject\\WebProject.csproj",
-        "packagesPath": "C:\\Users\\ARTEM\\.nuget\\packages\\",
-        "outputPath": "C:\\lab\\Project\\WebProject\\obj\\",
+        "projectPath": "D:\\Project\\WebProject\\WebProject.csproj",
+        "packagesPath": "C:\\Users\\Artem\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\WebProject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ARTEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,6 +47,20 @@
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
@@ -71,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

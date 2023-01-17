@@ -1,44 +1,45 @@
 ﻿using domain.Models;
 using domain.IRepositories;
 
-namespace domain.Services;
-
-public class UserService
+namespace domain.Services
 {
-    private readonly IUserRepository _repository;
-
-    public UserService(IUserRepository repository)
+    public class UserService
     {
-        _repository = repository;
-    }
-    public Result<User> CreateUser(User user)
-    {
-        if (!_repository.IsValid(user))
-            return Result.Fail<User>("User data is not valid");
+        private readonly IUserRepository _db;
 
-        if (_repository.IsExist(user.Username))
-            return Result.Fail<User>("User with that username already exists");
+        public UserService(IUserRepository db)
+        {
+            _db = db;
+        }
+        public Result<User> CreateUser(User user)
+        {
+            if (!_db.IsValid(user))
+                return Result.Fail<User>("User data is not valid");
 
-        return Result.Ok<User>(user);
-    }
+            if (_db.IsExist(user.Username))
+                return Result.Fail<User>("User with that username already exists");
 
-    public Result<User> GetByLogin(string login)
-    {
-        if (string.IsNullOrEmpty(login))
-            return Result.Fail<User>("Empty login");
+            return Result.Ok<User>(user);
+        }
 
-        if (!_repository.IsExist(login))
-            return Result.Fail<User>("User with this login doesn't exists");
+        public Result<User> GetByLogin(string login)
+        {
+            if (string.IsNullOrEmpty(login))
+                return Result.Fail<User>("Empty login");
 
-        return Result.Ok<User>(_repository.GetByLogin(login));
+            if (!_db.IsExist(login))
+                return Result.Fail<User>("User with this login doesn't exists");
 
-    }
+            return Result.Ok<User>(_db.GetByLogin(login));
 
-    public Result<bool> CheckExist(string login, string password)
-    {
-        if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
-            return Result.Fail<bool>("Empty login/password");
+        }
 
-        return Result.Ok<bool>(_repository.IsExist(login, password));
+        public Result<bool> CheckExist(string login, string password)
+        {
+            if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
+                return Result.Fail<bool>("Empty login/password");
+
+            return Result.Ok<bool>(_db.IsExist(login, password));
+        }
     }
 }

@@ -22,3 +22,17 @@ C:\lab\Project\domain\bin\Debug\net6.0\domain.deps.json
 C:\lab\Project\domain\bin\Debug\net6.0\domain.dll
 C:\lab\Project\domain\bin\Debug\net6.0\ref\domain.dll
 C:\lab\Project\domain\bin\Debug\net6.0\domain.pdb
+D:\Project\domain\bin\Debug\net6.0\domain.deps.json
+D:\Project\domain\bin\Debug\net6.0\domain.runtimeconfig.json
+D:\Project\domain\bin\Debug\net6.0\domain.dll
+D:\Project\domain\bin\Debug\net6.0\domain.pdb
+D:\Project\domain\obj\Debug\net6.0\domain.csproj.AssemblyReference.cache
+D:\Project\domain\obj\Debug\net6.0\domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\domain\obj\Debug\net6.0\domain.AssemblyInfoInputs.cache
+D:\Project\domain\obj\Debug\net6.0\domain.AssemblyInfo.cs
+D:\Project\domain\obj\Debug\net6.0\domain.csproj.CoreCompileInputs.cache
+D:\Project\domain\obj\Debug\net6.0\domain.dll
+D:\Project\domain\obj\Debug\net6.0\refint\domain.dll
+D:\Project\domain\obj\Debug\net6.0\domain.pdb
+D:\Project\domain\obj\Debug\net6.0\domain.genruntimeconfig.cache
+D:\Project\domain\obj\Debug\net6.0\ref\domain.dll

@@ -1,11 +1,14 @@
-﻿namespace domain.IRepositories;
-
-public interface IRepository<T> where T : class
+﻿namespace domain.IRepositories
 {
-    IEnumerable<T> GetAll();
-    T GetItem(int id);
-    void Create(T item);
-    void Update(T item);
-    void Delete(int id);
-    void Save();
+    public interface IRepository<T> where T : class
+    {
+        IEnumerable<T> GetAll();
+        T GetItem(int id);
+        bool Create(T item);
+        bool Update(T item);
+        bool Delete(int id);
+        public bool IsExists(int id);
+        public bool IsValid(T entity);
+        void Save();
+    }
 }

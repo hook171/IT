@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\lab\\Project\\UnitTests\\UnitTests.csproj": {}
+    "D:\\Project\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\lab\\Project\\domain\\domain.csproj": {
+    "D:\\Project\\domain\\domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\lab\\Project\\domain\\domain.csproj",
+        "projectUniqueName": "D:\\Project\\domain\\domain.csproj",
         "projectName": "domain",
-        "projectPath": "C:\\lab\\Project\\domain\\domain.csproj",
-        "packagesPath": "C:\\Users\\ARTEM\\.nuget\\packages\\",
-        "outputPath": "C:\\lab\\Project\\domain\\obj\\",
+        "projectPath": "D:\\Project\\domain\\domain.csproj",
+        "packagesPath": "C:\\Users\\Artem\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ARTEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,6 +47,20 @@
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
@@ -68,25 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\lab\\Project\\UnitTests\\UnitTests.csproj": {
+    "D:\\Project\\UnitTests\\UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\lab\\Project\\UnitTests\\UnitTests.csproj",
+        "projectUniqueName": "D:\\Project\\UnitTests\\UnitTests.csproj",
         "projectName": "UnitTests",
-        "projectPath": "C:\\lab\\Project\\UnitTests\\UnitTests.csproj",
-        "packagesPath": "C:\\Users\\ARTEM\\.nuget\\packages\\",
-        "outputPath": "C:\\lab\\Project\\UnitTests\\obj\\",
+        "projectPath": "D:\\Project\\UnitTests\\UnitTests.csproj",
+        "packagesPath": "C:\\Users\\Artem\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\UnitTests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ARTEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,8 +106,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\lab\\Project\\domain\\domain.csproj": {
-                "projectPath": "C:\\lab\\Project\\domain\\domain.csproj"
+              "D:\\Project\\domain\\domain.csproj": {
+                "projectPath": "D:\\Project\\domain\\domain.csproj"
               }
             }
           }
@@ -156,7 +162,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

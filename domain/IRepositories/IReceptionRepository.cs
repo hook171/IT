@@ -11,9 +11,5 @@ namespace domain.IRepositories
 
         IEnumerable<DateTime> GetFreeReceptionBySpec(Specialization specialization, Schedule shedule);
 
-        IEnumerable<Reception> GetReceptions(int doctorId);
-
-        Reception CreateBySpec(DateTime dateTime, Specialization specialization);
-
     }
 }

@@ -1,13 +1,9 @@
-﻿    using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace domain
+﻿namespace domain.Models
 {
     public class Reception
     {
+        public int Id { get; set; }
+
         public DateTime StartTime { get; set; }
 
         public DateTime EndTime { get; set; }
@@ -16,8 +12,9 @@ namespace domain
 
         public int DoctorID { get; set; }
 
-        public Reception(DateTime starttime,DateTime endtime, int patientid, int doctorid)
+        public Reception(int id, DateTime starttime,DateTime endtime, int patientid, int doctorid)
         {
+            Id = id;
             StartTime = starttime;
             EndTime = endtime;
             PatientID = patientid;

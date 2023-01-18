@@ -20,15 +20,15 @@ namespace ReceptionTests
 
         public Reception GetReception1()
         {
-            return new Reception(DateTime.Now.AddMinutes(15), DateTime.Now.AddMinutes(30), 1,1);
+            return new Reception(1,DateTime.Now.AddMinutes(15), DateTime.Now.AddMinutes(30), 1,1);
         }
         public Reception GetReception2()
         {
-            return new Reception(DateTime.Now.AddMinutes(45), DateTime.Now.AddMinutes(60), 1, 1);
+            return new Reception(1,DateTime.Now.AddMinutes(45), DateTime.Now.AddMinutes(60), 1, 1);
         }
         public Reception GetReception3()
         {
-            return new Reception(DateTime.Now.AddMinutes(75), DateTime.Now.AddMinutes(90), 1, 1);
+            return new Reception(1,DateTime.Now.AddMinutes(75), DateTime.Now.AddMinutes(90), 1, 1);
         }
 
         [Fact]
@@ -82,7 +82,7 @@ namespace ReceptionTests
         [Fact]
         public void GetFreeBySpecSuccess()
         {
-            var x = _receptionService.GetFreeBySpec(new Specialization(1, "Doctor"), new Schedule(1, 1, DateTime.Today, DateTime.Today));
+            var x = _receptionService.GetFreeBySpec(new Specialization(1, "Doctor"), new Schedule(1, 1, DateTime.Today, DateTime.Today, new DateOnly()));
             Assert.True(x.Success);
         }
 

@@ -11,9 +11,12 @@ autom4te.cache/
 tarballs/
 test-results/
 
+# Mac bundle stuff
 *.dmg
 *.app
 
+# content below from: https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
+# General
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -405,17 +408,3 @@ ASALocalRun/
 /.vs
 obj/
 bin/
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

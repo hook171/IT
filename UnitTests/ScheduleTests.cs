@@ -22,7 +22,7 @@ namespace ScheduleTests
 		public void AddScheduleSuccess()
 		{
 			_scheduleRepository.Setup(repository => repository.Create(It.IsAny<Schedule>())).Returns(() => true);
-			var date = new Schedule(1, 1, DateTime.Today, DateTime.Today);
+			var date = new Schedule(1, 1, DateTime.Today, DateTime.Today, new DateOnly());
 			var res = _scheduleService.Add(date);
 			Assert.True(res.Success);
 		}
@@ -32,7 +32,7 @@ namespace ScheduleTests
 		{
 			_scheduleRepository.Setup(repository => repository.Create(It.IsAny<Schedule>())).Returns(() => false);
 
-			var schedule = new Schedule(-1,-1, DateTime.Today, DateTime.Today);
+			var schedule = new Schedule(-1,-1, DateTime.Today, DateTime.Today, new DateOnly());
 			var result = _scheduleService.Add(schedule);
 
 			Assert.True(result.IsFailure);
@@ -44,7 +44,7 @@ namespace ScheduleTests
 		{
 			_scheduleRepository.Setup(repository => repository.Update(It.IsAny<Schedule>())).Returns(() => true);
 
-			var schedule = new Schedule(1,1,DateTime.Today,DateTime.Today);
+			var schedule = new Schedule(1,1,DateTime.Today,DateTime.Today, new DateOnly());
 			var result = _scheduleService.Update(schedule);
 
 			Assert.True(result.Success);
@@ -55,7 +55,7 @@ namespace ScheduleTests
 		{
 			_scheduleRepository.Setup(repository => repository.Update(It.IsAny<Schedule>())).Returns(() => false);
 
-			var schedule = new Schedule(1, 1, DateTime.Today, DateTime.Today);
+			var schedule = new Schedule(1, 1, DateTime.Today, DateTime.Today, new DateOnly());
 			var result = _scheduleService.Update(schedule);
 
 			Assert.True(result.IsFailure);
@@ -67,7 +67,7 @@ namespace ScheduleTests
 		{
 			_scheduleRepository.Setup(repository => repository.Update(It.IsAny<Schedule>())).Returns(() => false);
 
-			var schedule = new Schedule(1, 1, DateTime.Today, DateTime.Today);
+			var schedule = new Schedule(1, 1, DateTime.Today, DateTime.Today, new DateOnly());
 			var result = _scheduleService.Update(schedule);
 
 			Assert.True(result.IsFailure);
@@ -79,7 +79,7 @@ namespace ScheduleTests
 		{
 			_scheduleRepository.Setup(repository => repository.IsExists(It.Is<int>(id => id == 1))).Returns(true);
 
-			var schedule = new Schedule(1, 1, DateTime.Today, DateTime.Today);
+			var schedule = new Schedule(1, 1, DateTime.Today, DateTime.Today, new DateOnly());
 			var result = _scheduleService.Delete(schedule);
 
 			Assert.True(result.Success);
@@ -89,7 +89,7 @@ namespace ScheduleTests
 		{
 			_scheduleRepository.Setup(repository => repository.IsExists(It.Is<int>(id => id == 1))).Returns(false);
 
-			var schedule = new Schedule(1, 1, DateTime.Today, DateTime.Today);
+			var schedule = new Schedule(1, 1, DateTime.Today, DateTime.Today, new DateOnly());
 			var result = _scheduleService.Delete(schedule);
 
 			Assert.True(result.IsFailure);

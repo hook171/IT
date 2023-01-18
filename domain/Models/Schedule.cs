@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace domain.Models
+﻿namespace domain.Models
 {
     public class Schedule
     {
@@ -14,13 +8,15 @@ namespace domain.Models
         public DateTime StartTime { get; set; }
 
         public DateTime EndTime { get; set; }
+        public DateOnly Date { get; set; }
 
-        public Schedule(int id, int doctorid, DateTime starttime, DateTime endtime)
+        public Schedule(int id, int doctorid, DateTime starttime, DateTime endtime, DateOnly date)
         {
             Id = id;
             DoctorId = doctorid;   
             StartTime = starttime;
             EndTime = endtime;
+            Date = date;
         }
     }
 }

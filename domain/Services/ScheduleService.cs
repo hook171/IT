@@ -21,7 +21,7 @@ namespace domain.Services
             if (!_docDB.IsValid(doctor))
                 return Result.Fail<IEnumerable<Schedule>>("Doctor is not valid");
 
-            return Result.Ok<IEnumerable<Schedule>>(_db.GetSheduleByDate(doctor, date));
+            return Result.Ok<IEnumerable<Schedule>>(_db.GetScheduleByDate(doctor, date));
         }
 
         public Result<Schedule> Add(Schedule schedule)

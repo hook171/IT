@@ -1,7 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using BD;
+using BD.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<ApplicationContext>(options =>
+    options.UseNpgsql($"Host=localhost;Port=5432;Database=db;Username=postgres;Password=2012xxx"));
+builder.Services.AddDbContext<ApplicationContext>(options =>
+    options.EnableSensitiveDataLogging(true));
 
 var app = builder.Build();
 

@@ -27,18 +27,6 @@ namespace domain.Services
             return Result.Ok(reception);
         }
 
-        public Result<Reception> CreateReception(DateTime dateTime, Specialization specialization)
-        {
-            var list = _db.GetReceptionBySpec(specialization);
-            if (list.Any(x => dateTime < x.EndTime && dateTime.AddMinutes(60) > x.StartTime))
-                return Result.Fail<Reception>("There are no doctors available at this time.");
-
-            var reception = _db.CreateBySpec(dateTime, specialization);
-            _db.Create(reception);
-            return Result.Ok(reception);
-        }
-
-
         public Result<IEnumerable<DateTime>> GetFreeBySpec(Specialization specialization, Schedule shedule)
         {
             var reception = _db.GetFreeReceptionBySpec(specialization, shedule);

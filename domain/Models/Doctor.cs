@@ -4,11 +4,11 @@ namespace domain.Models
 {	
 	public class Doctor
 	{
-		public int Id;
+		public int Id { get; set; }
 
-		public string Fio;
+		public string Fio { get; set; }
 
-		public Specialization Spec;
+		public Specialization Spec { get; set; }	
 
 		public Doctor(int id, string fio, Specialization specialization)
 		{

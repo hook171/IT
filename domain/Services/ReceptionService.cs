@@ -27,9 +27,9 @@ namespace domain.Services
             return Result.Ok(reception);
         }
 
-        public Result<IEnumerable<DateTime>> GetFreeBySpec(Specialization specialization, Schedule shedule)
+        public Result<IEnumerable<DateTime>> GetFreeBySpec(Specialization specialization, Schedule schedule)
         {
-            var reception = _db.GetFreeReceptionBySpec(specialization, shedule);
+            var reception = _db.GetFreeReceptionBySpec(specialization, schedule);
             return Result.Ok(reception);
         }
     }
